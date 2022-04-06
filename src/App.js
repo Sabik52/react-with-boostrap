@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+
+import { Button } from 'bootstrap';
+import { Spinner } from 'react-bootstrap';
 import './App.css';
+import CardGroup2 from './Components/CardGrop2/CardGroup2';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Using React Boostrap </h1>
+     
+      <br />
+      <Spinner animation="border" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner>
+<CardGroup2></CardGroup2>
+      
+     
     </div>
   );
 }
